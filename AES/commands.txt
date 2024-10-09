@@ -1,0 +1,2 @@
+python aes.py encrypt ==> for encryption
+python aes.py decrypt ==> for decryption
