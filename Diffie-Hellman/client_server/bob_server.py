@@ -20,7 +20,10 @@ def bob_diffie_hellman():
     # Step 1: Generate a large prime number p and primitive root alpha
     print("Bob Program Started")
     p = generate_large_prime(1024)
-    print("Generated large prime")
+    with open("prime.txt", "w") as f:
+        f.write(str(p))
+    p = int(input("Enter the prime number:"))
+    # print("Generated large prime")
     
     numbers = [2, 3, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15]
     alpha = 2
